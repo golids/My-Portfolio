@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldae Love Rebucas - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --base-font-size: 16px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+            background-image: url("images/prog.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            font-size: var(--base-font-size);
+        }
+
+        header {
+            background-color: #29302fd3; /* Semi-transparent header */
+            color: white;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between; /* Push elements to opposite sides */
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 30px; /* Space between icons */
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 35px;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 32px;
+            display: flex;
+            justify-content: center;
+            overflow: auto; /* Allow scrolling only in the main area */
+        }
+
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            max-width: 90%;
+            background: rgba(255, 255, 255, 0.63);
+            padding: 16px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile h2 {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .profile p {
+            font-size: 32px;
+            line-height: 2;
+            margin-bottom: 16px;
+        }
+
+        .profile-image {
+            flex: 0 0 20vw;
+            margin-right: 16px;
+        }
+
+        .profile-image img {
+            width: 450px;
+            height: 650px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #1d1f1e;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 6px;
+            line-height: 1;
+        }
+
+        footer {
+            flex: 0 0 60px; /* Fixed height for footer */
+            background-color: #29302f;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* Media Query for Responsiveness */
+        @media (max-width: 900px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-image {
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .social-icons {
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/goldilab28" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/golids" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/benggalz?s=07" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-image">
+                <img src="images/golids.jpg" alt="Goldae Love Rebucas">
+            </div>
+            <div class="profile-text">
+                <h2>Goldae Love Rebucas</h2>
+                <p>Hello! I am Goldae Love Rebucas, but you can call me "golids". I'm a 2nd Year IT Student at USTP-CDO with a passion for programming, web development, and databases. I enjoy solving problems and building creative digital solutions.</p>
+                <p>If you want to learn more about me, you can contact me through these:</p>
+                <p>Email: <a href="mailto:rebucas.goldalove08@gmail.com">rebucas.goldalove08@gmail.com</a></p>
+                <p>Contact #: 09061839571</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Goldae Love Rebucas, BSIT-2R2</p>
+    </footer>
+</body>
+</html>
